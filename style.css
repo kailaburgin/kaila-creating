@@ -1,0 +1,162 @@
+body {
+    font-family: 'DM Serif Display', serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    /* flex: 1; */
+    /* Each section takes equal space to fill the container vertically */
+    justify-content: space-around;
+    /* border: 1px solid #ddd; */
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid #ddd; */
+    background-color: #d5dceb;
+}
+
+#logo {
+    /* border: 1px solid #ddd; */
+    width: 55%;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* border: 1px solid #ddd; */
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+li {
+    font-size: 1.4em;
+    list-style: none;
+    margin-left: 1.2em;
+    color: #112230;
+}
+
+.flex-container-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+}
+
+#mainphoto {
+    max-width: 50%;
+    height: auto;
+}
+
+#recent-projects {
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+}
+
+#project1 {
+    background-image: url('images/sewing-recap.jpg');
+}
+
+#about-me {
+    display: flex-wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #112230;
+    /*     background-color: #112230;
+    color: #d5dceb; */
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    /* flex: 1; */
+    /* Each section takes equal space to fill the container vertically */
+    justify-content: space-around;
+    /* border: 1px solid #ddd; */
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #d5dceb;
+    color: #112230;
+}
+
+.footer {
+    width: 50%;
+}
+
+#social-media {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 50px;
+}
+
+#contact-me {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.social-logo {
+    height: 50px;
+}
+
+#pinterest {
+    margin-left: 15px;
+}
+
+#contact-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-contact {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #d5dceb;
+    color: #112230;
+}
