@@ -12,6 +12,14 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: #112230;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 section {
     display: flex;
     flex-direction: row;
@@ -79,12 +87,12 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border: 1px solid #ddd;
 }
 
-.box>h4 {
+.box>h3 {
     position: relative;
 }
 
