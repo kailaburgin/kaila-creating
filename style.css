@@ -84,8 +84,76 @@ li {
     border: 1px solid #ddd;
 }
 
+.box>h4 {
+    position: relative;
+}
+
 #project1 {
     background-image: url('images/sewing-recap.jpg');
+    background-size: cover;
+    overflow: scroll;
+    position: relative;
+}
+
+#project1::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#project2 {
+    background-image: url('images/worktober.jpg');
+    background-size: cover;
+    overflow: scroll;
+    position: relative;
+}
+
+#project2::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#project3 {
+    background-image: url('images/isle-jeans.jpg');
+    background-size: cover;
+    overflow: scroll;
+    position: relative;
+}
+
+#project3::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#project4 {
+    background-image: url('images/roving-romper.jpg');
+    background-size: cover;
+    overflow: scroll;
+    position: relative;
+}
+
+#project4::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 #about-me {
