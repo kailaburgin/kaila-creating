@@ -160,3 +160,38 @@ footer {
     background-color: #d5dceb;
     color: #112230;
 }
+
+@media screen and (max-width: 600px) {
+    #mainphoto {
+        visibility: hidden;
+        clear: both;
+        float: left;
+        margin: 10px auto 5px 20px;
+        width: 28%;
+        display: none;
+    }
+}
+
+@media (max-width: 300px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+@media (min-width: 500px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 700px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 120%;
+    }
+}
