@@ -12,10 +12,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@300;400;700&display=swap"
         rel="stylesheet">
+    <script src="index.js" defer></script>
 </head>
 
 <body>
-    <script src="index.js"></script>
 
     <header id="navbar">
         <!-- <img id="minilogo" src="images/Kaila Creating-logos_white.png" alt="Kaila Creating logo"> -->
@@ -56,28 +56,19 @@
         </div>
     </section>
 
-    <section id="recent-projects" style="border-top: 10px solid #112230; border-bottom: 10px solid #112230;">
-        <a href="https://www.instagram.com/p/C0T0P4xsqu0/">
-            <div class="box" id="project1">
-                <h3>2023 Sewing Recap</h3>
-            </div>
-        </a>
-        <a href="https://www.instagram.com/p/Cy5hnT5OEWh/">
-            <div class="box" id="project2">
-                <h3>Worktober Roundup</h3>
-            </div>
-        </a>
-        <a href="https://www.instagram.com/p/CyQTt-3O9zJ/">
-            <div class="box" id="project3">
-                <h3>Isle Jeans</h3>
-            </div>
-        </a>
-        <a href="https://www.instagram.com/p/CwH6zgNRGBb/">
-            <div class="box" id="project4">
-                <h3>Roving Romper</h3>
-            </div>
-        </a>
-    </section>
+    <div class="carousel">
+
+        <div class="slides">
+            <img src="images/sewing-recap.jpg" alt="sewing recap 2023" />
+            <img src="images/worktober.jpg" alt="worktober 2023" />
+            <img src="images/isle-jeans.jpg" alt="isle jeans" />
+            <img src="images/roving-romper.jpg" alt="roving romper" />
+        </div>
+        <!--control buttons-->
+
+        <button class="prev">Previous</button>
+        <button class="next">Next</button>
+    </div>
 
     <section id="about-me">
         <h2>About Me</h2>

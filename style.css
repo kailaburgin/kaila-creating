@@ -40,6 +40,7 @@ section {
     justify-content: center;
     /* border: 1px solid #ddd; */
     background-color: #d5dceb;
+    z-index: 5;
 }
 
 #logo {
@@ -80,89 +81,39 @@ li {
     height: auto;
 }
 
-#recent-projects {
-    flex-wrap: wrap;
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
 }
 
-.box {
+.slides {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 250px;
-    border: 1px solid #ddd;
 }
 
-.box>h3 {
-    position: relative;
+.slides img {
+    width: 100%;
+    transition: transform 0.5s ease;
 }
 
-#project1 {
-    background-image: url('images/sewing-recap.jpg');
-    background-size: cover;
-    overflow: scroll;
-    position: relative;
-}
-
-#project1::before {
-    content: "";
+button {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-#project2 {
-    background-image: url('images/worktober.jpg');
-    background-size: cover;
-    overflow: scroll;
-    position: relative;
+.next {
+    right: 0;
 }
 
-#project2::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-#project3 {
-    background-image: url('images/isle-jeans.jpg');
-    background-size: cover;
-    overflow: scroll;
-    position: relative;
-}
-
-#project3::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-#project4 {
-    background-image: url('images/roving-romper.jpg');
-    background-size: cover;
-    overflow: scroll;
-    position: relative;
-}
-
-#project4::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(255, 255, 255, 0.7);
+.prev {
+    left: 0;
 }
 
 #about-me {
