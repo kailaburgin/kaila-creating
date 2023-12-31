@@ -45,7 +45,10 @@ section {
 
 #logo {
     /* border: 1px solid #ddd; */
-    width: 55%;
+
+    max-height: 200px;
+    max-width: 50%;
+
 }
 
 #menu {
@@ -77,15 +80,21 @@ li {
 }
 
 #mainphoto {
-    max-width: 50%;
+    max-width: 30%;
     height: auto;
+}
+
+#carousel-section {
+    border-top: 5px solid #112230;
+    border-bottom: 5px solid #112230;
 }
 
 .carousel {
     position: relative;
-    max-width: 600px;
+    max-width: 500px;
     margin: auto;
     overflow: hidden;
+    border-radius: 3%;
 }
 
 .slides {
@@ -101,19 +110,24 @@ button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
+    padding: 10px 15px;
+    background-color: rgba(213, 220, 235, 0.75);
+    color: #112230;
+    font-family: 'DM Serif Display', serif;
     border: none;
     cursor: pointer;
 }
 
 .next {
     right: 0;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
 }
 
 .prev {
     left: 0;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
 }
 
 #about-me {
@@ -187,6 +201,14 @@ footer {
     box-sizing: border-box;
     background-color: #d5dceb;
     color: #112230;
+}
+
+.under-construction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width: 35%; */
 }
 
 @media screen and (max-width: 600px) {
